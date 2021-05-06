@@ -27,6 +27,11 @@ function timeOfDay() {
 
 timeOfDay();
 
-document.getElementById("btn").addEventListener("click", function() {
+const darkMode = () => {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+/*document.getElementById("btn").addEventListener("click", function() {
   document.getElementById("demo").innerHTML = "Test Succesful!";
-});
+});*/
