@@ -14,7 +14,7 @@ function timeOfDay() {
   const theHour = theTime.getHours();
 
   if (theHour >= 0 && theHour <= 11) {
-    document.getElementById("timeOfDay").innerHTML = `Good Morning`;
+    document.getElementById("timeOfDay").innerHTML = "Good Morning";
   } else if (theHour >= 12 && theHour <= 18) {
     document.getElementById("timeOfDay").innerHTML = "Good Afternoon";
   } else if (theHour >= 19 && theHour <= 23) {
