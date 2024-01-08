@@ -51,8 +51,20 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    margin-top: 27%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container {
     margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin-top: 50%;
   }
 }
