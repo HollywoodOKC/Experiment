@@ -3,7 +3,7 @@ body {
   text-align: center;
   background-attachment: fixed;
   font-family: Lobster;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 25px;
+  align-items: center;
+  margin-top: 15%;
 }
 
 .container:hover {
@@ -37,6 +39,9 @@ body {
 
 .dark-mode {
   background-color: hsl(0, 0%, 10.2%);
+  .container:hover {
+    box-shadow: 0 8px 16px 0 hsl(0, 0%, 100%);
+  }
 }
 
 #btn {
@@ -44,4 +49,10 @@ body {
   margin: 0 auto;
   display: block;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 40%;
+  }
 }
