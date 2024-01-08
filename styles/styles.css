@@ -1,8 +1,19 @@
+@font-face {
+  font-family: Astropolis;
+  src: url(../fonts/AstropolisLaser.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: VCR_OSD;
+  src: url(../fonts/VCR_OSD.ttf);
+  font-style: normal;
+}
+
 body {
   color: hsl(0, 0%, 0%);
   text-align: center;
   background-attachment: fixed;
-  font-family: Lobster;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,12 +24,14 @@ body {
   text-align: center;
   color: hsl(0, 0%, 0%);
   font-size: xx-large;
+  font-family: VCR_OSD;
 }
 
 #timeOfDay {
   text-align: center;
   color: hsl(0, 0%, 0%);
   font-size: xx-large;
+  font-family: Astropolis;
 }
 
 .container {
