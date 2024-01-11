@@ -37,7 +37,7 @@ const darkMode = () => {
 }
 
 let flag = false;
-demo.innerHTML = `Dark Mode: Off <i class="fa-regular fa-lightbulb">`;
+demo.innerHTML = `Off <i class="fa-regular fa-lightbulb">`;
 
 const toggleSwitch = () => {
   flag = flag ? false : true;
@@ -45,10 +45,10 @@ const toggleSwitch = () => {
 
   if (flag === true) {
     darkMode();
-    demo.innerHTML = `Dark Mode: Engaged <i class="fa-solid fa-lightbulb"></i>`;
+    demo.innerHTML = `Engaged <i class="fa-solid fa-lightbulb"></i>`;
   } else {
     !darkMode();
-    demo.innerHTML = `Dark Mode: Off <i class="fa-regular fa-lightbulb">`;
+    demo.innerHTML = `Off <i class="fa-regular fa-lightbulb">`;
   }
 }
 
