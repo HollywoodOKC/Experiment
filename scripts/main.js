@@ -36,7 +36,7 @@ const darkMode = () => {
 }
 
 const toggleSwitch = () => { //Test Code delete after use
-  let flag = true;
+  let flag = false;
   flag = flag ? false : true;
   demo.innerHTML = flag;
 }
