@@ -30,7 +30,6 @@ function timeOfDay() {
 
 timeOfDay();
 
-let switchMode = false;
 
 const darkMode = () => {
   let element = document.body;
