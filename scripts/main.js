@@ -34,7 +34,7 @@ timeOfDay();
 const darkMode = () => {
   let element = document.body;
   element.classList.toggle("dark-mode");
-}
+};
 
 let flag = false;
 demo.innerHTML = `Off <i class="fa-regular fa-lightbulb">`;
@@ -50,6 +50,6 @@ const toggleSwitch = () => {
     !darkMode();
     demo.innerHTML = `Off <i class="fa-regular fa-lightbulb">`;
   }
-}
+};
 
 btn.addEventListener('click', toggleSwitch);
