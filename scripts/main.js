@@ -17,11 +17,11 @@ function timeOfDay() {
   const theHour = theTime.getHours();
 
   if (theHour >= 0 && theHour <= 11) {
-    document.getElementById("timeOfDay").innerHTML = "Good Morning";
+    document.getElementById("timeOfDay").innerHTML = `Good Morning <i class="fa-solid fa-mug-saucer"></i>`;
   } else if (theHour >= 12 && theHour <= 18) {
-    document.getElementById("timeOfDay").innerHTML = "Good Afternoon";
+    document.getElementById("timeOfDay").innerHTML = `Good Afternoon <i class="fa-solid fa-sun"></i>`;
   } else if (theHour >= 19 && theHour <= 23) {
-    document.getElementById("timeOfDay").innerHTML = "Good Evening";
+    document.getElementById("timeOfDay").innerHTML = `Good Evening <i class="fa-solid fa-star"></i>`;
   } else {
     document.getElementById("timeOfDay").innerHTML = "Good Day";
   }
