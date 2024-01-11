@@ -30,26 +30,26 @@ function timeOfDay() {
 
 timeOfDay();
 
+let switchMode = false;
+
 const darkMode = () => {
   let element = document.body;
   element.classList.toggle("dark-mode");
 }
 
-const toggleSwitch = () => { //Test Code delete after use
-  let flag = false;
-  flag = flag ? false : true;
-  demo.innerHTML = flag;
-}
+let flag = false;
 
-/*if (darkMode) {
-  darkMode = !darkMode;
-  const p = document.createElement("p");
-  p.innerHTML = `Dark Mode: Engaged`;
-  demo.appendChild(p);
-} else if (!darkMode) {
-  p.innerHTML = `Dark Mode: Off`;
-  demo.appendChild(p);
-}*/
+const toggleSwitch = () => {
+  flag = flag ? false : true;
+
+  if (flag === true) {
+    darkMode();
+    demo.innerHTML = `Dark Mode: Engaged`;
+  } else {
+    !darkMode();
+    demo.innerHTML = `Dark Mode: Off`;
+  }
+}
 
 btn.addEventListener('click', toggleSwitch);
 //Enable for the button be clicked and the saying pops up.
