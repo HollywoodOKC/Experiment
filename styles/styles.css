@@ -87,7 +87,7 @@ body {
 }
 
 #btn:hover {
-  background-color: hsl(295, 74%, 61%)
+  background-color: hsl(295, 74%, 61%);
 }
 
 @media screen and (max-width: 800px) {
