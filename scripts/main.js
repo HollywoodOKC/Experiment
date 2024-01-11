@@ -35,7 +35,7 @@ const darkMode = () => {
   element.classList.toggle("dark-mode");
 }
 
-const toggleSwitch = () => {
+const toggleSwitch = () => { //Test Code
   let flag = true;
   flag = flag ? false : true;
   demo.innerHTML = flag;
