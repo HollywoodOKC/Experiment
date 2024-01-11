@@ -18,9 +18,9 @@ function timeOfDay() {
 
   if (theHour >= 0 && theHour <= 11) {
     document.getElementById("timeOfDay").innerHTML = `Good Morning <i class="fa-solid fa-mug-saucer"></i>`;
-  } else if (theHour >= 12 && theHour <= 18) {
+  } else if (theHour >= 12 && theHour <= 17) {
     document.getElementById("timeOfDay").innerHTML = `Good Afternoon <i class="fa-solid fa-sun"></i>`;
-  } else if (theHour >= 19 && theHour <= 23) {
+  } else if (theHour >= 18 && theHour <= 23) {
     document.getElementById("timeOfDay").innerHTML = `Good Evening <i class="fa-solid fa-star"></i>`;
   } else {
     document.getElementById("timeOfDay").innerHTML = "Good Day";
