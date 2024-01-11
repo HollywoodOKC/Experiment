@@ -43,10 +43,10 @@ const toggleSwitch = () => {
 
   if (flag === true) {
     darkMode();
-    demo.innerHTML = `Dark Mode: Engaged <i class="fa-solid fa-star"></i>`;
+    demo.innerHTML = `Dark Mode: Engaged <i class="fa-solid fa-lightbulb"></i>`;
   } else {
     !darkMode();
-    demo.innerHTML = `Dark Mode: Off`;
+    demo.innerHTML = `Dark Mode: Off <i class="fa-regular fa-lightbulb">`;
   }
 }
 
