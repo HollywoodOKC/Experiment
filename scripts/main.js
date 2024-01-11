@@ -51,7 +51,3 @@ const toggleSwitch = () => {
 }
 
 btn.addEventListener('click', toggleSwitch);
-//Enable for the button be clicked and the saying pops up.
-/*document.getElementById("btn").addEventListener("click", function() {
-  document.getElementById("demo").innerHTML = "Test Successful!";
-});*/
