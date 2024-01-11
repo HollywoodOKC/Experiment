@@ -1,3 +1,6 @@
+const demo = document.getElementById('demo');
+const btn = document.getElementById('btn');
+
 const myTime = () => {
   const time = new Date();
   const hour = time.getHours();
@@ -32,6 +35,23 @@ const darkMode = () => {
   element.classList.toggle("dark-mode");
 }
 
+const toggleSwitch = () => {
+  let flag = true;
+  flag = flag ? false : true;
+  demo.innerHTML = flag;
+}
+
+/*if (darkMode) {
+  darkMode = !darkMode;
+  const p = document.createElement("p");
+  p.innerHTML = `Dark Mode: Engaged`;
+  demo.appendChild(p);
+} else if (!darkMode) {
+  p.innerHTML = `Dark Mode: Off`;
+  demo.appendChild(p);
+}*/
+
+btn.addEventListener('click', toggleSwitch);
 //Enable for the button be clicked and the saying pops up.
 /*document.getElementById("btn").addEventListener("click", function() {
   document.getElementById("demo").innerHTML = "Test Successful!";
