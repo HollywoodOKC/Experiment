@@ -2,7 +2,7 @@ const demo = document.getElementById('demo');
 const btn = document.getElementById('btn');
 
 function addZero(t) {
-  if (t > 10) {
+  if (t < 10) {
     t = '0' + t;
   }
   return t;
@@ -15,7 +15,7 @@ const myTime = () => {
   let sec = time.getSeconds();
   hour = addZero(hour);
   min = addZero(min);
-  sec = addZer0(sec);
+  sec = addZero(sec);
   const currentTime = `${hour}:${min}:${sec}`
   document.getElementById("myClockDisplay").innerHTML = currentTime;
   setTimeout(myTime, 1000);
