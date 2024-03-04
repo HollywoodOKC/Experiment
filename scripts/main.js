@@ -1,11 +1,21 @@
 const demo = document.getElementById('demo');
 const btn = document.getElementById('btn');
 
+function addZero(t) {
+  if (t > 10) {
+    t = '0' + t;
+  }
+  return t;
+};
+
 const myTime = () => {
   const time = new Date();
-  const hour = time.getHours();
-  const min = time.getMinutes();
-  const sec = time.getSeconds();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  hour = addZero(hour);
+  min = addZero(min);
+  sec = addZer0(sec);
   const currentTime = `${hour}:${min}:${sec}`
   document.getElementById("myClockDisplay").innerHTML = currentTime;
   setTimeout(myTime, 1000);
@@ -41,7 +51,7 @@ demo.innerHTML = `Off <i class="fa-regular fa-lightbulb">`;
 
 const toggleSwitch = () => {
   flag = flag ? false : true;
-  
+
 
   if (flag === true) {
     darkMode();
