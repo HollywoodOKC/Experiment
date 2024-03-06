@@ -40,14 +40,20 @@ body {
   font-family: Astropolis;
 }
 
-.container {
-  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+.pitch-mixin {
+  --aug-tr: 25px;
+  --aug-b-extend1: 50%;
+
+  --aug-border-all: 7px;
+  --aug-border-bg: hsl(180, 100%, 50%);
+
+  --aug-inlay-all: 4px;
+  --aug-inlay-bg: hsl(180, 100%, 50%);
+  --aug-inlay-opacity: 0.5;
   transition: 0.3s;
-  background-color: hsl(159.8, 100%, 74.9%);
   width: 50%;
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
   align-items: center;
   margin-top: 10%;
   padding: 20px;
